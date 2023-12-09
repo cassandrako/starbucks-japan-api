@@ -13,7 +13,6 @@ body, html {
     background-size: cover;
 }
 
-
 .menu-container {
     position: absolute;
     top: 50%; 
@@ -36,4 +35,9 @@ body, html {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.bg-image-no-blur {
+    filter: none;
+    -webkit-filter: none;
 }
