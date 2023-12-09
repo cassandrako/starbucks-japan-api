@@ -25,13 +25,17 @@ function fetchData(drinkType) {
 
 function displayData(data) {
     const container = document.getElementById('data-container');
-    container.innerHTML = ''; 
+    container.innerHTML = '';
+    container.style.display = 'flex';
+
     data.forEach(item => {
         const element = document.createElement('div');
-        element.innerHTML = `Item: ${item.name}`;
+        element.classList.add('menu-item');
+        element.textContent = item.name;
         container.appendChild(element);
     });
 }
+
 
 function displayError(error) {
     const container = document.getElementById('data-container');

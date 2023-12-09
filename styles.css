@@ -41,3 +41,28 @@ body, html {
     filter: none;
     -webkit-filter: none;
 }
+
+#data-container {
+    width: 250px;
+    height: 456px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('assets/menu.png') no-repeat;
+    background-size: contain;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    overflow: auto;
+}
+
+.menu-item {
+    text-align: center;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 0.8em;
+}
