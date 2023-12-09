@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Web Page</title>
+    <title>Starbucks Japan Drinks</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Starbucks Drinks</h1>
 
-    <div id="data-container">
-    </div>
+<div class="bg-image"></div>
 
-    <script src="script.js"></script>
+<div class="menu-container">
+    <select id="drink-type">
+        <option value="espresso">Espresso</option>
+        <option value="tea">Tea</option>
+        <option value="seasonal">Seasonal</option>
+        <option value="frappuccino">Frappuccino</option>
+    </select>
+    <button id="fetch-button">Fetch Drinks</button>
+</div>
+
+<div id="data-container">
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
